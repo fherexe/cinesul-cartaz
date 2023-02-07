@@ -1,15 +1,22 @@
 body {
     margin: 0;
-    background-image: url(https://p4.wallpaperbetter.com/wallpaper/782/241/217/california-lake-lake-tahoe-wallpaper-preview.jpg);
-    background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
-    color: #fdf7f785;
+    background-color: #141414;
 }
+
+h1 {
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+    color: #fff;
+}
+
+
 .container {
     position: relative;
     width: 320px;
-    margin: 100px auto 0px auto;
-    perspective: 900px;
+    margin: 10px auto 0px auto;
+    perspective: 1200px;
 }
 
 .carrossel {
@@ -17,18 +24,17 @@ body {
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    animation: rotate360 18s infinite forwards linear;
+    animation: rotate360 2s infinite forwards linear;
 }
 
 .imagem {
     position: absolute;
-    width: 290px;
-    height: 187px;
+    width: 165px;
+    height: 260px;
     top: 40px;
     left: 10px;
     right: 10px;
     background-size: cover;
-    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
     display: flex;
 }
 
@@ -47,46 +53,47 @@ body {
 }
 
 .imagem:nth-child(1) {
-    background-image: url(https://www.stockvault.net/data/2010/12/19/116493/preview16.jpg);
+    background-image: url(img/aquaman2.jpg);
     transform: rotateY(0deg) translatez(430px);
 }
 
 .imagem:nth-child(2) {
-    background-image: url(img/2.jpeg);
+    background-image: url(img/avatar2.png);
     transform: rotateY(40deg) translatez(430px);
 }
 
 .imagem:nth-child(3) {
-    background-image: url(img/3.jpeg);
+    background-image: url(img/batemaporta.png);
     transform: rotateY(80deg) translatez(430px);
 }
 
 .imagem:nth-child(4) {
-    background-image: url(img/4.jpeg);
+    background-image: url(img/dungeonsedragons.jpg);
     transform: rotateY(120deg) translatez(430px);
 }
 
 .imagem:nth-child(5) {
-    background-image: url(img/5.webp);
+    background-image: url(img/gatodebotas.jfif);
     transform: rotateY(160deg) translatez(430px);
 }
 
 .imagem:nth-child(6) {
-    background-image: url(img/6.webp);
+    background-image: url(img/homemformigaevespaquantumania.png);
     transform: rotateY(200deg) translatez(430px);
 }
 
 .imagem:nth-child(7) {
-    background-image: url(img/7.webp);
+    background-image: url(img/megan.png);
     transform: rotateY(240deg) translatez(430px);
 }
 
 .imagem:nth-child(8) {
-    background-image: url(img/8.jpeg);
+    background-image: url(img/newtitanic.png);
     transform: rotateY(280deg) translatez(430px);
 }
 
 .imagem:nth-child(9) {
-    background-image: url(img/9.jpeg);
+    background-image: url(img/shazam.jpg);
     transform: rotateY(320deg) translatez(430px);
 }
+
