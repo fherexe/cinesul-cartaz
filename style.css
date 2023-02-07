@@ -1,22 +1,22 @@
 body {
     margin: 0;
+    background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #141414;
+    background-color: black;
 }
 
 h1 {
-    text-align: center;
-    margin: 0 auto;
-    width: fit-content;
     color: #fff;
+    text-align: center;
+    margin: 15px auto;
+    width: fit-content;
 }
-
 
 .container {
     position: relative;
     width: 320px;
-    margin: 10px auto 0px auto;
-    perspective: 1200px;
+    margin:100px auto 0px auto;
+    perspective:900px;
 }
 
 .carrossel {
@@ -24,14 +24,14 @@ h1 {
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    animation: rotate360 2s infinite forwards linear;
+    animation: rotate360 20s infinite forwards linear;
 }
 
 .imagem {
     position: absolute;
-    width: 165px;
-    height: 260px;
-    top: 40px;
+    width: 160px;
+    height: 250px;
+    top: -10px;
     left: 10px;
     right: 10px;
     background-size: cover;
@@ -41,6 +41,7 @@ h1 {
 .imagem span {
     margin: auto;
     font-size: 1em;
+    color: #fff;
 }
 
 @keyframes rotate360 {
@@ -48,17 +49,17 @@ h1 {
         transform: rotateY(0)
     }
     to {
-        transform: rotateY(-360deg)
+        transform: rotateY(360deg)
     }
 }
 
 .imagem:nth-child(1) {
-    background-image: url(img/aquaman2.jpg);
+    background-image: url(img/gatodebotas2.jpg);
     transform: rotateY(0deg) translatez(430px);
 }
 
 .imagem:nth-child(2) {
-    background-image: url(img/avatar2.png);
+    background-image: url(img/aquaman2.jpg);
     transform: rotateY(40deg) translatez(430px);
 }
 
@@ -73,27 +74,26 @@ h1 {
 }
 
 .imagem:nth-child(5) {
-    background-image: url(img/gatodebotas.jfif);
+    background-image: url(img/homemformigaevespaquantumania.png);
     transform: rotateY(160deg) translatez(430px);
 }
 
 .imagem:nth-child(6) {
-    background-image: url(img/homemformigaevespaquantumania.png);
+    background-image: url(img/newtitanic.png);
     transform: rotateY(200deg) translatez(430px);
 }
 
 .imagem:nth-child(7) {
-    background-image: url(img/megan.png);
+    background-image: url(img/Poster_Avatar2.png);
     transform: rotateY(240deg) translatez(430px);
 }
 
 .imagem:nth-child(8) {
-    background-image: url(img/newtitanic.png);
+    background-image: url(img/shazam.jpg);
     transform: rotateY(280deg) translatez(430px);
 }
 
 .imagem:nth-child(9) {
-    background-image: url(img/shazam.jpg);
+    background-image: url(img/2.png);
     transform: rotateY(320deg) translatez(430px);
 }
-
