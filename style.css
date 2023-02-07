@@ -17,13 +17,22 @@ h1 {
     text-align: center;
     margin: 15px auto;
     width: fit-content;
+    display: block;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 46px;
+    letter-spacing: -0.6px;
+    word-spacing: 2px;
+    font-weight: 700;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: capitalize
 }
 
 .container {
-    position: relative;
     width: 320px;
     margin:100px auto 0px auto;
-    perspective:900px;
+    perspective:1200px;
 }
 
 .carrossel {
@@ -31,7 +40,7 @@ h1 {
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    animation: rotate360 50s infinite forwards linear;
+    animation: rotate360 40s infinite forwards linear;
     
 }
 
@@ -49,14 +58,14 @@ h1 {
 .imagem span {
     margin: 0 0 auto 0;
     font-size: 1em;
-    background-color: rgb(250, 250, 117);
+    background-color:#fff;
     padding: 1px;
     border-radius: 4%;
 }
 
 @keyframes rotate360 {
     from {
-        transform: rotateY(0)
+        transform: rotateY(0deg)
     }
     to {
         transform: rotateY(360deg)
@@ -65,45 +74,58 @@ h1 {
 
 .imagem:nth-child(1) {
     background-image: url(img/gatodebotas2.jpg);
-    transform: rotateY(0deg) translatez(430px);
+    transform: rotateY(0deg) translateZ(500px);
 }
 
 .imagem:nth-child(2) {
     background-image: url(img/aquaman2.jpg);
-    transform: rotateY(40deg) translatez(430px);
+    transform: rotateY(40deg) translateZ(500px);
 }
 
 .imagem:nth-child(3) {
     background-image: url(img/batemaporta.png);
-    transform: rotateY(80deg) translatez(430px);
+    transform: rotateY(80deg) translateZ(500px);
 }
 
 .imagem:nth-child(4) {
     background-image: url(img/dungeonsedragons.jpg);
-    transform: rotateY(120deg) translatez(430px);
+    transform: rotateY(120deg) translateZ(500px);
 }
 
 .imagem:nth-child(5) {
     background-image: url(img/homemformigaevespaquantumania.png);
-    transform: rotateY(160deg) translatez(430px);
+    transform: rotateY(160deg) translateZ(500px);
 }
 
 .imagem:nth-child(6) {
     background-image: url(img/newtitanic.png);
-    transform: rotateY(200deg) translatez(430px);
+    transform: rotateY(200deg) translateZ(500px);
 }
 
 .imagem:nth-child(7) {
     background-image: url(img/Poster_Avatar2.png);
-    transform: rotateY(240deg) translatez(430px);
+    transform: rotateY(240deg) translateZ(500px);
 }
 
 .imagem:nth-child(8) {
     background-image: url(img/shazam.jpg);
-    transform: rotateY(280deg) translatez(430px);
+    transform: rotateY(280deg) translateZ(500px);
 }
 
 .imagem:nth-child(9) {
     background-image: url(img/2.png);
-    transform: rotateY(320deg) translatez(430px);
+    transform: rotateY(320deg) translateZ(500px);
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    padding: 4px;
+    position: absolute;
+    bottom: 0;
+    width:100%;
 }
