@@ -1,22 +1,20 @@
-:root {
-    --color1:#fff;
-    --color2:#fff;
-    --color3:#fff;
-    --color4:#fff;
-}
-
 body {
     background-image: url(img/wallpaper006.jpg);
     background-size: cover;
+    color: rgb(36, 36, 36);
 }
 
+h1 {
+    text-align: center;
+    padding: 5% 0px 0 0;
+}
 
 
 .container {
     position: relative;
     width: 320px;
     margin: 100px auto 0 auto;
-    perspective: 900px ;
+    perspective: 100vw;
 }
 
 .carrossel {
@@ -24,18 +22,19 @@ body {
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    animation: rotate360 19s infinite forwards linear;
+    animation: rotate360 20s infinite forwards linear;
 }
 
 .imagem {
+    display: flex;
     position: absolute;
     width: 290px;
     height: 187px;
-    top: 40px;
     left: 10px;
     right: 10px;
-    background-size: cover;
-    display: flex;
+    background-size:cover;
+    background-repeat: no-repeat;
+    
 }
 
 .imagem span {
@@ -56,47 +55,47 @@ body {
 }
 
 .imagem:nth-child(1) {
-    background-image: url(img/batemaporta.png);
+    background-image: url(https://arenaesports.com.br/wp-content/uploads/2021/07/jinx-gloriosa-wild-rift.jpg);
     transform: rotateY(0deg) translateZ(430px);
 }
 
 .imagem:nth-child(2) {
-    background-image: url(img/batemaporta.png);
+    background-image: url(https://nexus.leagueoflegends.com/wp-content/uploads/2017/11/LOL_CMS_148_Article_01_dmfth3873t0naloob0cw.jpg);
     transform: rotateY(40deg) translateZ(430px);
 }
 
 .imagem:nth-child(3) {
-    background-image: url(img/batemaporta.png);
+    background-image: url(http://noticias.maisesports.com.br/wp-content/uploads/2021/09/Janna-Skin-Vitoriosa-do-LoL.jpg);
     transform: rotateY(80deg) translateZ(430px);
 }
 
 .imagem:nth-child(4) {
-    background-image: url(img/shazam.jpg);
+    background-image: url(http://noticias.maisesports.com.br/wp-content/uploads/2021/09/Sivir-Skin-Vitoriosa-do-LoL.jpg);
     transform: rotateY(120deg) translateZ(430px);
 }
 
 .imagem:nth-child(5) {
-    background-image: url(img/batemaporta.png);
+    background-image: url(https://static1-br.millenium.gg/articles/1/78/61/@/107425-image-article_cover_bd-1.jpg);
     transform: rotateY(160deg) translateZ(430px);
 }
 
 .imagem:nth-child(6) {
-    background-image: url(img/batemaporta.png);
+    background-image: url(https://noticias.maisesports.com.br/wp-content/uploads/2020/10/Lucian-vitorioso.jpg);
     transform: rotateY(200deg) translateZ(430px);
 }
 
 .imagem:nth-child(7) {
-    background-image: url(img/batemaporta.png);
+    background-image: url(http://noticias.maisesports.com.br/wp-content/uploads/2021/09/Elise-Skin-Vitoriosa-do-LoL.jpg);
     transform: rotateY(240deg) translateZ(430px);
 }
 
 .imagem:nth-child(8) {
-    background-image: url(img/batemaporta.png);
+    background-image: url(http://noticias.maisesports.com.br/wp-content/uploads/2021/09/Morgana-Skin-Vitoriosa-do-LoL.jpg);
     transform: rotateY(280deg) translateZ(430px);
 }
 
 .imagem:nth-child(9) {
-    background-image: url(img/batemaporta.png);
+    background-image: url(img/seju.webp);
     transform: rotateY(320deg) translateZ(430px);
 }
 
@@ -108,7 +107,6 @@ footer {
     text-align: center;
     padding: 2em 0;
     font-weight: 500;
-    color: rgb(36, 36, 36);
 }
 
 footer a {
